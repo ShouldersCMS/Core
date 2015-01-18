@@ -1,0 +1,27 @@
+{
+    "name": "shoulderscms/shoulderscms",
+    "description": "",
+    "authors": [
+        {
+            "name": "Andrew Huggins",
+            "email": "andrewhuggins@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "lavary/laravel-menu": "1.5.0",
+        "jaybizzle/safeurl": "0.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/controllers",
+            "src/models"
+        ],
+        "psr-0": {
+            "Shoulderscms\\Shoulderscms\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
