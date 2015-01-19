@@ -8,13 +8,13 @@ This is not production ready...so use at your own risk. This is a very early rel
 2. Add the following to your composer.json file
 3. Do composer update in terminal
 4. Add the following to your app/app.php under service providers:
-		```php
-		'providers' => [
-		    'Shoulderscms\Shoulderscms\ShoulderscmsServiceProvider',
-			'Lavary\Menu\ServiceProvider',
-			'Jaybizzle\Safeurl\SafeurlServiceProvider',
-		]
-		```
+```php
+'providers' => [
+    'Shoulderscms\Shoulderscms\ShoulderscmsServiceProvider',
+	'Lavary\Menu\ServiceProvider',
+	'Jaybizzle\Safeurl\SafeurlServiceProvider',
+]
+```
 5. Add the following to your app/app.php under aliases:
 		```
 		'Menu'				=> 'Shoulderscms\Shoulderscms\Facades\Menu',
