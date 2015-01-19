@@ -8,12 +8,16 @@ This is not production ready...so use at your own risk. This is a very early rel
 2. Add the following to your composer.json file
 3. Do composer update in terminal
 4. Add the following to your app/app.php under service providers:
-		`'Shoulderscms\Shoulderscms\ShoulderscmsServiceProvider',
+		```php
+		'Shoulderscms\Shoulderscms\ShoulderscmsServiceProvider',
 		'Lavary\Menu\ServiceProvider',
-		'Jaybizzle\Safeurl\SafeurlServiceProvider',`
+		'Jaybizzle\Safeurl\SafeurlServiceProvider',
+		```
 5. Add the following to your app/app.php under aliases:
-		`'Menu'				=> 'Shoulderscms\Shoulderscms\Facades\Menu',
-		'Safeurl'           => 'Jaybizzle\Safeurl\Facades\Safeurl',`
+		```php
+		'Menu'				=> 'Shoulderscms\Shoulderscms\Facades\Menu',
+		'Safeurl'           => 'Jaybizzle\Safeurl\Facades\Safeurl',
+		```
 6. For some reason there is an error currently in the Menu package. Open vendor/lavary/laravel-menu/src/Lavary/Menu/Menu.php and comment out line 63
 7. Update your app/config/local/database.php file to reflect your local DB with proper host, database, username, password credentials.
 8. Run package migrations by running the following in terminal:
