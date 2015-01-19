@@ -16,10 +16,12 @@ This is not production ready...so use at your own risk. This is a very early rel
 ]
 ```
 5. Add the following to your app/app.php under aliases:
-		```
-		'Menu'				=> 'Shoulderscms\Shoulderscms\Facades\Menu',
-		'Safeurl'           => 'Jaybizzle\Safeurl\Facades\Safeurl',
-		```
+```php
+'aliases' => [
+	'Menu'				=> 'Shoulderscms\Shoulderscms\Facades\Menu',
+	'Safeurl'           => 'Jaybizzle\Safeurl\Facades\Safeurl',
+]
+```
 6. For some reason there is an error currently in the Menu package. Open vendor/lavary/laravel-menu/src/Lavary/Menu/Menu.php and comment out line 63
 7. Update your app/config/local/database.php file to reflect your local DB with proper host, database, username, password credentials.
 8. Run package migrations by running the following in terminal:
