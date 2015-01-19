@@ -9,20 +9,23 @@ Menu::make('AdminNav', function($menu)
 Route::get('admin', function()
 {
 	if (Auth::check()) {
-		$user = User::find(1);
-		Auth::login($user);
+		$user = User::find(Auth::user()->id);
 		return View::make('shoulderscms::AdminLTE.index', ['user' => $user]);
-	} 
+	}
 	return View::make('shoulderscms::AdminLTE.login');
 });
-Route::get('test', function()
+
+Route::post('admin', function()
 {
-	return Menu::test();
+	if (Auth::attempt(array(
+			'username' => Input::get('username'), 
+			'password' => Input::get('password')
+	))) {
+
+	}
+	return Redirect::to('admin');
 });
-// Route::any('login', function()
-// {
-// 	return Input::all();
-// });
+
 
 Route::any('logout', array('uses' => 'Shoulderscms\Shoulderscms\controllers\basicController@logout'));
 Route::any('login', array('uses' => 'Shoulderscms\Shoulderscms\controllers\basicController@login'));

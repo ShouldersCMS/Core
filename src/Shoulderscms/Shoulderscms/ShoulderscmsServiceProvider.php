@@ -40,6 +40,11 @@ class ShoulderscmsServiceProvider extends ServiceProvider {
 		  $loader->alias('Menu', 'Shoulderscms\Shoulderscms\Facades\Menu');
 		});
 		
+		$this->app['shoulderscms::create-user'] = $this->app->share(function($app)
+	    {
+	        return new UserCreatorCommand;
+	    });
+	    $this->commands('shoulderscms::create-user');
 	}
 
 	/**
