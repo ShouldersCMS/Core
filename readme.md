@@ -5,7 +5,10 @@ Currently a very early version of a CMS built on top of Laravel. Also uses Admin
 This is not production ready...so use at your own risk. This is a very early release.
 
 * install Laravel like you normally would.
-* Add the following to your composer.json file
+* Add the following to the require block in your composer.json file
+```php
+"shoulderscms/shoulderscms": "dev-master"
+```
 * Do composer update in terminal
 * Add the following to your `app/app.php` under service providers:
 ```php
