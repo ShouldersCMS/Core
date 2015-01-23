@@ -21,6 +21,7 @@
         <link href="{{ asset('packages/shoulderscms/shoulderscms/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="{{ asset('packages/shoulderscms/shoulderscms/css/AdminLTE.css') }}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('packages/shoulderscms/shoulderscms/css/custom.css') }}">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
