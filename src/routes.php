@@ -26,6 +26,12 @@ Route::post('admin', function()
 	return Redirect::to('admin');
 });
 
+Route::filter('admin', function()
+{
+  if (Auth::guest()) return View::make('shoulderscms::AdminLTE.login');
+});
+Route::when('admin/*', 'admin');
+
 
 Route::any('logout', array('uses' => 'Shoulderscms\Shoulderscms\controllers\basicController@logout'));
 Route::any('login', array('uses' => 'Shoulderscms\Shoulderscms\controllers\basicController@login'));
