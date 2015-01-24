@@ -29,6 +29,10 @@ This is not production ready...so use at your own risk. This is a very early rel
 * Update your app/config/local/database.php file to reflect your local DB with proper host, database, username, password credentials.
 * Run package migrations by running the following in terminal:
 	`php artisan migrate --package=shoulderscms/shoulderscms`
+* Publish the package assets
+```php
+php artisan asset:publish shoulderscms/shoulderscms
+```
 * assuming you have set everything up correctly, you should be able to go to /admin and see the login screen. Use the console to set up a new user using the `php artisan create-user` command. You will be prompted for all the necessary fields.
 
 > Note: If you are using Homestead, you may have to be SSHed into your Homestead machine in order for it to be able to write to your DB
