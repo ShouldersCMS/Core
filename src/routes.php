@@ -4,32 +4,16 @@ Menu::make('AdminNav', function($menu)
 {
 	$menu->add('Dashboard', array('url' => 'admin', 'icon' => 'fa fa-dashboard'));
 });
+Menu::get('AdminNav')->add('Users', array('url' => 'admin/users', 'icon' => 'fa fa-users', 'class' => 'test'))->data('order', 10);
+Menu::get('AdminNav')->users->add('Create User', 'admin/users/create');
+Menu::get('AdminNav')->users->add('Manage Users', 'admin/users');
 
+Route::resource('admin/users', 'Shoulderscms\Shoulderscms\controllers\UsersController');
 
-Route::get('admin', function()
-{
-	if (Auth::check()) {
-		$user = User::find(Auth::user()->id);
-		return View::make('shoulderscms::AdminLTE.index', ['user' => $user]);
-	}
-	return View::make('shoulderscms::AdminLTE.login');
-});
+Route::get('admin', 'Shoulderscms\Shoulderscms\controllers\basicController@admin');
+Route::post('admin', 'Shoulderscms\Shoulderscms\controlelrs\basicController@attempt');
 
-Route::post('admin', function()
-{
-	if (Auth::attempt(array(
-			'username' => Input::get('username'), 
-			'password' => Input::get('password')
-	))) {
-
-	}
-	return Redirect::to('admin');
-});
-
-Route::filter('admin', function()
-{
-  if (Auth::guest()) return View::make('shoulderscms::AdminLTE.login');
-});
+Route::filter('admin', 'AdminFilter');
 Route::when('admin/*', 'admin');
 
 

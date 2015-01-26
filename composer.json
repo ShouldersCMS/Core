@@ -17,7 +17,8 @@
         "classmap": [
             "src/migrations",
             "src/controllers",
-            "src/models"
+            "src/models",
+            "src/filters"
         ],
         "psr-0": {
             "Shoulderscms\\Shoulderscms\\": "src/"
