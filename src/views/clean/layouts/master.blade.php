@@ -15,7 +15,7 @@
     {{ HTML::style('css/bootstrap.min.css') }}
 
     <!-- Custom CSS -->
-    
+
     {{ HTML::style('css/clean-blog.min.css') }}
 
     <!-- Custom Fonts -->
@@ -45,14 +45,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">ShouldersCMS</a>
+                <a class="navbar-brand" href="{{ route('home') }}">ShouldersCMS</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="{{ route('home') }}">Home</a>
                     </li>
                     <li>
                         <a href="/page/about">About</a>
