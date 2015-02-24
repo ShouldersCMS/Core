@@ -12,11 +12,11 @@
     <title>ShouldersCMS Blog</title>
 
     <!-- Bootstrap Core CSS -->
-    {{ HTML::style('css/bootstrap.min.css') }}
+    {{ HTML::style('packages/shoulderscms/shoulderscms/css/bootstrap.min.css') }}
 
     <!-- Custom CSS -->
 
-    {{ HTML::style('css/clean-blog.min.css') }}
+    {{ HTML::style('packages/shoulderscms/shoulderscms/css/clean-blog.min.css') }}
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
