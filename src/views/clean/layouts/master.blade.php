@@ -119,14 +119,14 @@
     </footer>
 
     <!-- jQuery -->
-    
-    <script src="{{ URL::asset('js/jquery.js') }}"></script>
+
+    <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/bootstrap.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{ URL::asset('js/clean-blog.min.js') }}"></script>
+    <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/clean-blog.min.js') }}"></script>
 
 </body>
 
