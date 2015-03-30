@@ -112,7 +112,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; Your Website {{ date('Y') }}</p>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
 
     <!-- jQuery -->
 
-    <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/jquery.js') }}"></script>
+    <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/bootstrap.min.js') }}"></script>
