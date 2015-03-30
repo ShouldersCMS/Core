@@ -119,7 +119,7 @@
     </footer>
 
     <!-- jQuery -->
-    {{ HTML::style('packages/shoulderscms/shoulderscms/css/bootstrap.min.css') }}
+    
     <script src="{{ URL::asset('js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
