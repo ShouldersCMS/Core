@@ -119,13 +119,14 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    {{ HTML::style('packages/shoulderscms/shoulderscms/css/bootstrap.min.css') }}
+    <script src="{{ URL::asset('js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+    <script src="{{ URL::asset('js/clean-blog.min.js') }}"></script>
 
 </body>
 
