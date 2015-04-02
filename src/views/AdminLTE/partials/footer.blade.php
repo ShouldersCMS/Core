@@ -18,8 +18,9 @@
         <script src="{{ asset('packages/shoulderscms/shoulderscms/js/plugins/daterangepicker/daterangepicker.js') }}" type="text/javascript"></script>
         <!-- datepicker -->
         <script src="{{ asset('packages/shoulderscms/shoulderscms/js/plugins/datepicker/bootstrap-datepicker.js') }}" type="text/javascript"></script>
-        <!-- Bootstrap WYSIHTML5 -->
-        <script src="{{ asset('packages/shoulderscms/shoulderscms/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}" type="text/javascript"></script>
+        <!-- Summernote -->
+        <script src="{{ asset('packages/shoulderscms/shoulderscms/js/plugins/summernote/summernote.min.js') }}" type="text/javascript"></script>
+
         <!-- iCheck -->
         <script src="{{ asset('packages/shoulderscms/shoulderscms/js/plugins/iCheck/icheck.min.js') }}" type="text/javascript"></script>
 
@@ -30,7 +31,7 @@
         <script src="{{ asset('packages/shoulderscms/shoulderscms/js/AdminLTE/dashboard.js') }}" type="text/javascript"></script>
 
         <!-- AdminLTE for demo purposes -->
-        <!-- <script src="{{ asset('packages/shoulderscms/shoulderscms/js/AdminLTE/demo.js') }}" type="text/javascript"></script> -->
-
+        <script src="{{ asset('packages/shoulderscms/shoulderscms/js/AdminLTE/demo.js') }}" type="text/javascript"></script>
+        @yield('footerjs')
     </body>
 </html>

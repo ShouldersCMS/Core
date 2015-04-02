@@ -26,9 +26,6 @@ $(function() {
     }).disableSelection();
     ;
 
-    //bootstrap WYSIHTML5 - text editor
-    $(".textarea").wysihtml5();
-
     $('.daterange').daterangepicker(
             {
                 ranges: {
@@ -113,7 +110,7 @@ $(function() {
         fillColor: "#ebf4f9",
         height: '50',
         width: '80'
-    });    
+    });
 
     //The Calender
     $("#calendar").datepicker();

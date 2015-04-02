@@ -18,6 +18,12 @@
 
     {{ HTML::style('packages/shoulderscms/shoulderscms/css/clean-blog.min.css') }}
 
+    <!-- Prism CSS -->
+
+    {{ HTML::style('packages/shoulderscms/shoulderscms/css/prism.css') }}
+
+
+
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -127,6 +133,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/clean-blog.min.js') }}"></script>
+
+    <!-- Prism JS -->
+    <script src="{{ URL::asset('packages/shoulderscms/shoulderscms/js/prism.js') }}"></script>
 
 </body>
 
