@@ -8,20 +8,9 @@
         <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
         <link href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-        <!-- Morris chart -->
-        <link href="{{ asset('packages/shoulderscms/shoulderscms/css/morris/morris.css') }}" rel="stylesheet" type="text/css" />
+        @yield('headercss')
 
-        <!-- jvectormap -->
-        <link href="{{ asset('packages/shoulderscms/shoulderscms/css/jvectormap/jquery-jvectormap-1.2.2.css') }}" rel="stylesheet" type="text/css" />
-        <!-- Date Picker -->
-        <link href="{{ asset('packages/shoulderscms/shoulderscms/css/datepicker/datepicker3.css') }}" rel="stylesheet" type="text/css" />
-        <!-- Daterange picker -->
-        <link href="{{ asset('packages/shoulderscms/shoulderscms/css/daterangepicker/daterangepicker-bs3.css') }}" rel="stylesheet" type="text/css" />
-        <!-- bootstrap wysihtml5 - text editor -->
-        <!-- <link href="{{ asset('packages/shoulderscms/shoulderscms/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}" rel="stylesheet" type="text/css" /> -->
-
-        <!-- Summernote -->
-        <link href="{{ asset('packages/shoulderscms/shoulderscms/css/summernote/summernote.css') }}" rel="stylesheet" type="text/css" />
+        
 
         <!-- Theme style -->
         <link href="{{ asset('packages/shoulderscms/shoulderscms/css/AdminLTE.css') }}" rel="stylesheet" type="text/css" />
