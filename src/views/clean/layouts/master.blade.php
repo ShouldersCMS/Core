@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
 
     {{ HTML::style('packages/shoulderscms/shoulderscms/css/clean-blog.min.css') }}
+    {{ HTML::style('packages/shoulderscms/shoulderscms/css/custom.css') }}
 
     <!-- Prism CSS -->
 

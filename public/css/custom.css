@@ -1,3 +1,6 @@
 .btn-group form {
 	display: inline;
 }
+blockquote > p {
+	margin-top: 0;
+}
