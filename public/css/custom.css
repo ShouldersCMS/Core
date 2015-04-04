@@ -1,6 +1,6 @@
 .btn-group form {
 	display: inline;
 }
-blockquote > p {
+blockquote > p:nth-child(1) {
 	margin-top: 0;
 }
